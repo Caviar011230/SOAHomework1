@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#CCCCFF">
+    <RelativeLayout
+        android:id="@+id/rl_tourist_info_res_back"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp">
+        <Button
+            android:id="@+id/btn_tourist_info_res_back"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="◀返回"
+            android:textSize="15dp">
+
+        </Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tourist_info_res_weather"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/rl_tourist_info_res_back"
+        android:layout_marginBottom="30dp">
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tourist_info_res_sight"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/rl_tourist_info_res_weather">
+
+    </RelativeLayout>
+</RelativeLayout>

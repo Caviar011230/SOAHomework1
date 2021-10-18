@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFF0F5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tv_main_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:text="旅游新闻简报：">
+
+        </TextView>
+        <!-- 下面部分为新闻部分 -->
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFE1FF"
+            android:padding="15dp"
+            android:layout_below="@id/tv_main_news_title">
+            <TextView
+                android:id="@+id/tv_main_news_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_main_news_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tv_main_news_1"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_main_news_3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tv_main_news_2"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_main_news_4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tv_main_news_3"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:id="@+id/tv_main_news_5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/tv_main_news_4"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="#000000">
+
+            </TextView>
+        </RelativeLayout>
+        <!-- 下面部分为功能按钮 -->
+        <Button
+            android:id="@+id/btn_tourist_info"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_1"
+            android:layout_marginTop="50dp"
+            android:background="#cc99ff"
+            android:text="城市旅游信息查询"
+            android:textSize="20sp">
+
+        </Button>
+        <Button
+            android:id="@+id/btn_postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/btn_tourist_info"
+            android:layout_marginTop="30dp"
+            android:background="#cc99ff"
+            android:text="邮编查询"
+            android:textSize="20sp">
+
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>
