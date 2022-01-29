@@ -53,7 +53,7 @@
             android:layout_below="@id/et_postal_code_1"
             android:layout_centerHorizontal="true"
             android:text="查询"
-            android:textSize="20dp">
+            android:textSize="15dp">
 
 
         </Button>
@@ -89,18 +89,18 @@
             android:text="省(直辖市、自治区):">
 
         </TextView>
-        <EditText
-            android:id="@+id/et_postal_code_2"
+        <Spinner
+            android:id="@+id/sp_postal_code_1"
             android:layout_toRightOf="@id/tv_postal_code_province"
             android:layout_width="85dp"
             android:layout_height="40dp"
             android:layout_below="@+id/tv_postal_code_2"
             android:background="#FFFFFF">
 
-        </EditText>
+        </Spinner>
         <TextView
             android:id="@+id/tv_postal_code_city"
-            android:layout_toRightOf="@id/et_postal_code_2"
+            android:layout_toRightOf="@id/sp_postal_code_1"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:layout_below="@id/tv_postal_code_2"
@@ -109,23 +109,23 @@
             android:text="设区市:">
 
         </TextView>
-        <EditText
-            android:id="@+id/et_postal_code_3"
+        <Spinner
+            android:id="@+id/sp_postal_code_2"
             android:layout_width="85dp"
             android:layout_height="40dp"
             android:layout_toRightOf="@id/tv_postal_code_city"
             android:layout_below="@+id/tv_postal_code_2"
             android:background="#FFFFFF">
 
-        </EditText>
+        </Spinner>
         <Button
             android:id="@+id/btn_postal_code_2"
             android:layout_width="80dp"
             android:layout_height="45dp"
-            android:layout_below="@id/et_postal_code_2"
+            android:layout_below="@id/sp_postal_code_1"
             android:layout_centerInParent="true"
             android:text="查询"
-            android:textSize="20dp">
+            android:textSize="15dp">
 
 
         </Button>

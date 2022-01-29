@@ -22,20 +22,102 @@
             android:textSize="15dp">
 
         </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:text="  天气及景点信息"
+            android:layout_toRightOf="@id/btn_tourist_info_res_back">
+
+        </TextView>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_tourist_info_res_weather"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_below="@id/rl_tourist_info_res_back"
-        android:layout_marginBottom="30dp">
-
+        android:layout_marginBottom="30dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:id="@+id/tv_weather_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_weather_2"
+            android:layout_below="@id/tv_weather_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center">
+        </TextView>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_tourist_info_res_sight"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/rl_tourist_info_res_weather">
+        <TextView
+            android:id="@+id/tv_tourist_info_res_sight_1"
+            android:layout_height="65dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="2dp"
+            android:background="#cfe2f3"
+            android:textColor="#000000"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_tourist_info_res_sight_2"
+            android:layout_height="65dp"
+            android:layout_below="@id/tv_tourist_info_res_sight_1"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:background="#9fc5e8"
+            android:layout_marginBottom="2dp"
+            android:textColor="#000000"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_tourist_info_res_sight_3"
+            android:layout_height="65dp"
+            android:layout_below="@id/tv_tourist_info_res_sight_2"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="2dp"
+            android:background="#cfe2f3"
+            android:textColor="#000000"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_tourist_info_res_sight_4"
+            android:layout_height="65dp"
+            android:layout_below="@id/tv_tourist_info_res_sight_3"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:background="#9fc5e8"
+            android:layout_marginBottom="2dp"
+            android:textColor="#000000"
+            android:textSize="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_tourist_info_res_sight_5"
+            android:layout_height="65dp"
+            android:layout_below="@id/tv_tourist_info_res_sight_4"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="5dp"
+            android:background="#cfe2f3"
+            android:textColor="#000000"
+            android:textSize="25dp">
+        </TextView>
 
     </RelativeLayout>
 </RelativeLayout>

@@ -43,10 +43,12 @@
         </TextView>
 
         <Spinner
+            android:id="@+id/sp_tourist_info_1"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_below="@id/tv_tourist_info_1"
-            android:background="#FFFFFF">
+            android:background="#FFFFFF"
+            android:spinnerMode="dialog">
 
         </Spinner>
 
@@ -67,10 +69,12 @@
 
         </TextView>
         <Spinner
+            android:id="@+id/sp_tourist_info_2"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_below="@id/tv_tourist_info_2"
-            android:background="#FFFFFF">
+            android:background="#FFFFFF"
+            android:spinnerMode="dialog">
 
         </Spinner>
     </RelativeLayout>
@@ -89,6 +93,12 @@
             android:textSize="24dp">
 
         </Button>
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </TextView>
     </RelativeLayout>
 
 

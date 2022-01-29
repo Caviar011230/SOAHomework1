@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
     }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         if(titles[4]==null) {
             getNews(httpUrl);
@@ -85,19 +86,26 @@ public class MainActivity extends AppCompatActivity {
         for(int i=1;i<=5;i++){
             news[i-1].setText(i+"."+titles[i-1]);
         }
+        Intent intent1 = new Intent(MainActivity.this,TouristInfoActivity.class);
+        Intent intent2 = new Intent(MainActivity.this,PostalCodeActivity.class);
         mBtnTouristInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,TouristInfoActivity.class);
-                startActivity(intent);
+
+                try {
+                    startActivity(intent1);
+                } catch (Exception e){
+                    e.printStackTrace();
+                    e.printStackTrace();
+                }
             }
         });
         mBtnPostalCode = (Button) findViewById(R.id.btn_postal_code);
         mBtnPostalCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,PostalCodeActivity.class);
-                startActivity(intent);
+
+                startActivity(intent2);
             }
         });
 
